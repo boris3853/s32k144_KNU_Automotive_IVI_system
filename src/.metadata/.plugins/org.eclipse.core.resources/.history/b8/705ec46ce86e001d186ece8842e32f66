@@ -86,12 +86,12 @@ void SEG_PORT_INIT()
     PCC->PCCn[PCC_PORTB_INDEX] |= PCC_PCCn_CGC_MASK;
 
     /* 7SEG PDDR 설정
-    // OUTPUT: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB10 PB10
+    // OUTPUT: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB9 PB10
     */
     PTB->PDDR |= (1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|
     			 (1<<5)|(1<<8)|(1<<10)|(1<<11);
 
-    // PORTB: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB10 PB11 MUX 설정
+    // PORTB: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB9 PB10 MUX 설정
     PORTB->PCR[0] |= PORT_PCR_MUX(1);
     PORTB->PCR[1] |= PORT_PCR_MUX(1);
     PORTB->PCR[2] |= PORT_PCR_MUX(1);
@@ -157,11 +157,11 @@ int main(void){
     GPIO_PORT_INIT();
     SEG_PORT_INIT();
 
-    int num = 88;
+    int num = 0;
     while(1)
     {
+    	//if(num == 100) num = 0;
         TEST();
-        Seg_out(num);
-        delay_ms(1000);
+        Seg_out(88);
     }
 }

@@ -104,7 +104,7 @@ void SEG_PORT_INIT()
 }
 
 void Seg_out(int number){
-	Delaytime = 1;
+	Delaytime = 200;
 
 	num1=(number/10)%10;
 	num0= number%10;
@@ -157,9 +157,11 @@ int main(void){
     GPIO_PORT_INIT();
     SEG_PORT_INIT();
 
-    int num = 88;
+    int num = 1;
     while(1)
     {
+    	if(num == 80) num = 8;
+    	if(num == 8) num = 80;
         TEST();
         Seg_out(num);
         delay_ms(1000);

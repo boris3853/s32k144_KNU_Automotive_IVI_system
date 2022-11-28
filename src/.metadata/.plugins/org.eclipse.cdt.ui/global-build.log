@@ -71,3 +71,334 @@ arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
    2652	   1064	   3104	   6820	   1aa4	s32k144_KNU_Driving_ABS_Simulator.elf
 Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
  
+14:24:13 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Building file: ../include/clocks_and_modes.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@include/clocks_and_modes.args" -MMD -MP -MF"include/clocks_and_modes.d" -MT"include/clocks_and_modes.o" -o "include/clocks_and_modes.o" "../include/clocks_and_modes.c"
+Finished building: ../include/clocks_and_modes.c
+Finished building: ../src/main.c
+ 
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3800	   1136	   3128	   8064	   1f80	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+14:24:21 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3800	   1136	   3128	   8064	   1f80	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+14:24:24 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3800	   1136	   3128	   8064	   1f80	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+14:28:41 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:160:9: warning: unused variable 'num' [-Wunused-variable]
+     int num = 0;
+         ^~~
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+14:28:50 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+14:29:13 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:160:9: warning: unused variable 'num' [-Wunused-variable]
+     int num = 0;
+         ^~~
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+14:29:15 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+14:30:54 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:13:20 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:160:9: warning: unused variable 'num' [-Wunused-variable]
+     int num = 0;
+         ^~~
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:17:12 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:19:02 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:160:9: warning: unused variable 'num' [-Wunused-variable]
+     int num = 0;
+         ^~~
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:45:23 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:160:9: warning: unused variable 'num' [-Wunused-variable]
+     int num = 0;
+         ^~~
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:45:26 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3784	   1136	   3128	   8048	   1f70	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:46:54 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3800	   1136	   3128	   8064	   1f80	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:46:56 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3800	   1136	   3128	   8064	   1f80	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:47:15 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3800	   1136	   3128	   8064	   1f80	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:47:24 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3800	   1136	   3128	   8064	   1f80	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:54:41 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3812	   1136	   3128	   8076	   1f8c	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:55:15 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3808	   1136	   3128	   8072	   1f88	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:55:53 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3812	   1136	   3128	   8076	   1f8c	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+15:56:24 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3812	   1136	   3128	   8076	   1f8c	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+16:02:33 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   3792	   1136	   3128	   8056	   1f78	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 

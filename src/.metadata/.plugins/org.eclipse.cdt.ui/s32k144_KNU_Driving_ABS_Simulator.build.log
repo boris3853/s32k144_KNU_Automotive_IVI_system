@@ -1,11 +1,21 @@
-14:00:18 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+16:02:33 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
 make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
 Invoking: Standard S32DS Print Size
 arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
    text	   data	    bss	    dec	    hex	filename
-   2652	   1064	   3104	   6820	   1aa4	s32k144_KNU_Driving_ABS_Simulator.elf
+   3792	   1136	   3128	   8056	   1f78	s32k144_KNU_Driving_ABS_Simulator.elf
 Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
  
 
-14:00:18 Build Finished (took 434ms)
+16:02:34 Build Finished (took 1s.303ms)
 

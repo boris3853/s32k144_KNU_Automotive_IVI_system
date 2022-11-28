@@ -9,8 +9,8 @@ unsigned int Delaytime = 0; 	/* Delay Time Setting Variable*/
 unsigned int num,num0,num1 = 0;
 unsigned int FND_SEL[4]={ 0x001,0x002 };
 unsigned int FND_DATA[10] =
-{ 0x53C, 0x018, 0x92C, 0x83C, 0xC18, 0xC34, 0xD34, 0x41C, 0xD3C, 0xC1C };
-unsigned int CLEAR_SEL = 0x003, CLEAR_DATA = 0xD3C;
+{ 0x33C, 0x018, 0x52C, 0x43C, 0x618, 0x634, 0x734, 0x21C, 0x731, 0x61C };
+unsigned int CLEAR_SEL = 0x003, CLEAR_DATA = 0x73C;
 
 
 void GPIO_PORT_INIT()
@@ -86,12 +86,12 @@ void SEG_PORT_INIT()
     PCC->PCCn[PCC_PORTB_INDEX] |= PCC_PCCn_CGC_MASK;
 
     /* 7SEG PDDR 설정
-    // OUTPUT: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB10 PB10
+    // OUTPUT: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB9 PB10
     */
     PTB->PDDR |= (1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|
-    			 (1<<5)|(1<<8)|(1<<10)|(1<<11);
+    			 (1<<5)|(1<<8)|(1<<9)|(1<<10);
 
-    // PORTB: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB10 PB11 MUX 설정
+    // PORTB: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB9 PB10 MUX 설정
     PORTB->PCR[0] |= PORT_PCR_MUX(1);
     PORTB->PCR[1] |= PORT_PCR_MUX(1);
     PORTB->PCR[2] |= PORT_PCR_MUX(1);
@@ -99,8 +99,8 @@ void SEG_PORT_INIT()
     PORTB->PCR[4] |= PORT_PCR_MUX(1);
     PORTB->PCR[5] |= PORT_PCR_MUX(1);
 	PORTB->PCR[8] |= PORT_PCR_MUX(1);
+	PORTB->PCR[9] |= PORT_PCR_MUX(1);
 	PORTB->PCR[10] |= PORT_PCR_MUX(1);
-	PORTB->PCR[11] |= PORT_PCR_MUX(1);
 }
 
 void Seg_out(int number){
@@ -157,11 +157,11 @@ int main(void){
     GPIO_PORT_INIT();
     SEG_PORT_INIT();
 
-    int num = 88;
+    int num = 0;
     while(1)
     {
+    	//if(num == 100) num = 0;
         TEST();
-        Seg_out(num);
-        delay_ms(1000);
+        Seg_out(88);
     }
 }
