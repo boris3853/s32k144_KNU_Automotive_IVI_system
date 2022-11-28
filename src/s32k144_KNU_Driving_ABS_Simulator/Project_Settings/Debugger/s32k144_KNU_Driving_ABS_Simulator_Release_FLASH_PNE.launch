@@ -198,7 +198,7 @@
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Release_FLASH/s32k144_KNU_Driving_ABS_Simulator.elf"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="s32k144_KNU_Driving_ABS_Simulator"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.release.241526960"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.release.1972247794"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/s32k144_KNU_Driving_ABS_Simulator"/>
 </listAttribute>

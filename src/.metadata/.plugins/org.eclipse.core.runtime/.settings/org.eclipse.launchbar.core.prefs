@@ -1,9 +1,6 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator_Debug_FLASH_PNE,org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator_Debug_RAM_PNE,org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator_Release_FLASH_PNE,org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator_Release_RAM_PNE,org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator.elf,org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator Debug_FLASH
+configDescList=
 eclipse.preferences.version=1
-org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator\ Debug_FLASH/activeLaunchMode=debug
-org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator\ Debug_FLASH/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
-org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator.elf/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator_Debug_FLASH_PNE/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:s32k144_KNU_Driving_ABS_Simulator_Debug_FLASH_PNE/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

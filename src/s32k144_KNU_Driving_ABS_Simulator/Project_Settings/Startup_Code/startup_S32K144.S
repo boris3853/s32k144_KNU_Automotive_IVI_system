@@ -347,7 +347,7 @@ Reset_Handler:
     bge .LC4
 .LC5:
 #endif
-    
+
     /* Initialize the stack pointer */
     ldr     r0,=__StackTop
     mov     r13,r0
@@ -362,7 +362,16 @@ Reset_Handler:
     ldr     r0,=init_data_bss
     blx     r0
     cpsie   i               /* Unmask interrupts */
-    bl      main
+
+#ifndef __START
+#ifdef __EWL__
+#define __START  __thumb_startup
+#else
+#define __START _start
+#endif
+#endif
+	bl	__START
+    
 JumpToSelf:
     b       JumpToSelf
 
