@@ -10818,3 +10818,1740 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Dr
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 !SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:03:10.856
 !MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:04:48.812
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:04:48.812
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:04:48.813
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:04:48.813
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:04:55.328
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:04:55.328
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:04:55.329
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:04:55.329
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:04:55.766
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:04:55.766
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:04:55.767
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:04:55.767
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:01.797
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:01.797
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:01.799
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:01.799
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:02.092
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:02.092
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:02.094
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:02.094
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:03.721
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:03.721
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:03.722
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:03.722
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:03.957
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:03.957
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:03.958
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:03.958
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:08.499
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:08.499
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:08.500
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:08.500
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:08.530
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:08.530
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:08.531
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:08.531
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:16.457
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:16.457
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:05:16.458
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:05:16.458
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:06:49.779
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:06:49.779
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:06:49.780
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:06:49.780
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:06:52.193
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:06:52.193
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-23 11:06:52.194
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:347)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:216)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2022-11-23 11:06:52.194
+!MESSAGE Resource '/s32k144_KNU_Driving_ABS_Simulator/SDK' is not local.
+
+!ENTRY com.nxp.s32ds.cle.runtime.hardware.launch.configuration.service 4 0 2022-11-23 11:08:56.932
+!MESSAGE No deviceCoreId was found for launch configuration
+
+!ENTRY com.nxp.s32ds.cle.cdt.debugger.gdbjtag.pne.svd 2 0 2022-11-23 11:08:56.933
+!MESSAGE Cannot find DeviceCoreDescriptor  for launch configuration 'com.pemicro.debug.gdbjtag.pne.launchConfigurationType' 
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-23 11:12:13.096
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-23 11:12:13.097
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2022-11-23 11:12:16.469
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-run
+Error message from debugger back end:
+Error creating process C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf, (error 193).
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:228)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at com.freescale.s32ds.cdt.debug.LaunchConfigurationDelegate2Wrapper.launch(LaunchConfigurationDelegate2Wrapper.java:32)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Error creating process C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf, (error 193).
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-23 11:12:16.469
+!MESSAGE Failed to execute MI command:
+-exec-run
+Error message from debugger back end:
+Error creating process C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf, (error 193).
+!STACK 0
+java.lang.Exception: Error creating process C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf, (error 193).
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY com.nxp.s32ds.cle.runtime.hardware.launch.configuration.service 4 0 2022-11-23 11:12:27.924
+!MESSAGE No deviceCoreId was found for launch configuration
+
+!ENTRY com.nxp.s32ds.cle.cdt.debugger.gdbjtag.pne.svd 2 0 2022-11-23 11:12:27.925
+!MESSAGE Cannot find DeviceCoreDescriptor  for launch configuration 'com.pemicro.debug.gdbjtag.pne.launchConfigurationType' 
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2022-11-23 11:12:43.481
+!MESSAGE Error while launching command: --version
+
+!ENTRY com.nxp.s32ds.cle.runtime.hardware.launch.configuration.service 4 0 2022-11-23 11:12:55.473
+!MESSAGE No deviceCoreId was found for launch configuration
+
+!ENTRY com.nxp.s32ds.cle.cdt.debugger.gdbjtag.pne.svd 2 0 2022-11-23 11:12:55.474
+!MESSAGE Cannot find DeviceCoreDescriptor  for launch configuration 'com.pemicro.debug.gdbjtag.pne.launchConfigurationType' 
+
+!ENTRY com.nxp.s32ds.cle.runtime.hardware.launch.configuration.service 4 0 2022-11-23 11:14:44.383
+!MESSAGE No deviceCoreId was found for launch configuration
+
+!ENTRY com.nxp.s32ds.cle.cdt.debugger.gdbjtag.pne.svd 2 0 2022-11-23 11:14:44.383
+!MESSAGE Cannot find DeviceCoreDescriptor  for launch configuration 'com.pemicro.debug.gdbjtag.pne.launchConfigurationType' 
+
+!ENTRY com.nxp.s32ds.cle.runtime.hardware.launch.configuration.service 4 0 2022-11-23 11:14:50.912
+!MESSAGE No deviceCoreId was found for launch configuration
+
+!ENTRY com.nxp.s32ds.cle.cdt.debugger.gdbjtag.pne.svd 2 0 2022-11-23 11:14:50.913
+!MESSAGE Cannot find DeviceCoreDescriptor  for launch configuration 'com.pemicro.debug.gdbjtag.pne.launchConfigurationType' 
+
+!ENTRY com.nxp.s32ds.cle.runtime.hardware.launch.configuration.service 4 0 2022-11-23 11:15:04.868
+!MESSAGE No deviceCoreId was found for launch configuration
+
+!ENTRY com.nxp.s32ds.cle.cdt.debugger.gdbjtag.pne.svd 2 0 2022-11-23 11:15:04.869
+!MESSAGE Cannot find DeviceCoreDescriptor  for launch configuration 'com.pemicro.debug.gdbjtag.pne.launchConfigurationType' 
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2022-11-23 11:19:15.265
+!MESSAGE Error while launching command: --version
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 11:20:57.250
+!MESSAGE Request monitor: 'Sequence "", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 11:20:57.251
+!MESSAGE Request monitor: 'Sequence "Initializing debugger services", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 11:20:57.253
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@1e56567): Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2022-11-23 11:20:57.257
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:424)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:387)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:312)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 1 com.pemicro.debug.gdbjtag.pne 8 1 2022-11-23 11:20:57.257
+!MESSAGE PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 11:23:41.939
+!MESSAGE Request monitor: 'Sequence "", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 11:23:41.940
+!MESSAGE Request monitor: 'Sequence "Initializing debugger services", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 11:23:41.941
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@985ee2): Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2022-11-23 11:23:41.943
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:424)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:387)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:312)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 1 com.pemicro.debug.gdbjtag.pne 8 1 2022-11-23 11:23:41.944
+!MESSAGE PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 11:25:58.978
+!MESSAGE Request monitor: 'Sequence "", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 11:25:58.979
+!MESSAGE Request monitor: 'Sequence "Initializing debugger services", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 11:25:58.980
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@1c1fcdb): Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2022-11-23 11:25:58.983
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:424)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:387)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:312)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 1 com.pemicro.debug.gdbjtag.pne 8 1 2022-11-23 11:25:58.983
+!MESSAGE PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting.
+
+!ENTRY com.nxp.s32ds.cle.runtime.hardware.launch.configuration.service 4 0 2022-11-23 11:26:32.115
+!MESSAGE No deviceCoreId was found for launch configuration
+
+!ENTRY com.nxp.s32ds.cle.cdt.debugger.gdbjtag.pne.svd 2 0 2022-11-23 11:26:32.115
+!MESSAGE Cannot find DeviceCoreDescriptor  for launch configuration 'com.pemicro.debug.gdbjtag.pne.launchConfigurationType' 
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 12:06:43.676
+!MESSAGE Request for monitor: '48^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-23 12:06:43.676
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-23 12:06:45.235
+!MESSAGE Request for monitor: '58^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-23 12:06:45.235
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SESSION 2022-11-27 23:53:23.753 -----------------------------------------------
+eclipse.buildId=2.0.0.202001161704
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.119
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.125
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.125
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.127
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.128
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.129
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.131
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.134
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.135
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.136
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.136
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.137
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.139
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.140
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.141
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.141
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.143
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.143
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.145
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.145
+!MESSAGE Actions have been registered for SDK FreeMaster_S32xx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.176
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.177
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.178
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.179
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.180
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.181
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.182
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.183
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.184
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.185
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.186
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.187
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.188
+!MESSAGE Actions have been registered for SDK FreeMaster_KEAxx_2.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.253
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.254
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.255
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.256
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.257
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.258
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.260
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.261
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.262
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.264
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.265
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.266
+!MESSAGE Actions have been registered for SDK S32K11x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.296
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.297
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.298
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.299
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.300
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.301
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.302
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.303
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.304
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.304
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.305
+!MESSAGE Actions have been registered for SDK S32K144_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.315
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.316
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.317
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.318
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.319
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.319
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.320
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.321
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.322
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.323
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.324
+!MESSAGE Actions have been registered for SDK S32K142_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.333
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.334
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.334
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.335
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.336
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.337
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.338
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.339
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.340
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.341
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.342
+!MESSAGE Actions have been registered for SDK S32K146_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.350
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.351
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.352
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.353
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.354
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.355
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.356
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.358
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.358
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.359
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.381
+!MESSAGE Actions have been registered for SDK S32K148_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.390
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.391
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.392
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.393
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.394
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.395
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.396
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.398
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.399
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.400
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.401
+!MESSAGE Actions have been registered for SDK S32K116_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.412
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.414
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.414
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.415
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.416
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.417
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.418
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.419
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.421
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.423
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.425
+!MESSAGE Actions have been registered for SDK S32K118_SDK_3.0.0_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.464
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.465
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.465
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.466
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.467
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.468
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.468
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.469
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.470
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.471
+!MESSAGE Actions have been registered for SDK KEAx_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.518
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.519
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.557
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.558
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.558
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.559
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.560
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.563
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.564
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.565
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.566
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.566
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.567
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.568
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.569
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 0 0 2022-11-27 23:53:37.570
+!MESSAGE Actions have been registered for SDK S32K14x_AMMCLIB_1.1.18_PATH.
+
+!ENTRY com.freescale.s32ds.cross.sdk.support 1 0 2022-11-27 23:53:39.422
+!MESSAGE Load SDKs, sec.: 0.159
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-27 23:58:19.152
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-27 23:58:19.153
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:23:11.401
+!MESSAGE Request monitor: 'Sequence "", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:23:11.402
+!MESSAGE Request monitor: 'Sequence "Initializing debugger services", result for executing step #0 = Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:23:11.403
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@764fe2): Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null' resulted in a cancel status: Status CANCEL: com.pemicro.debug.gdbjtag.pne code=1 PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting. null, even though the request is not set to cancel.
+
+!ENTRY com.pemicro.debug.gdbjtag.pne 4 5012 2022-11-28 07:23:11.408
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:582)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.access$4(Sequence.java:574)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:431)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:424)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:387)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:312)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 1 com.pemicro.debug.gdbjtag.pne 8 1 2022-11-28 07:23:11.411
+!MESSAGE PEmicro GDB Launch Failure : Unable to auto-detect debug hardware. Please specify on the command-line. If running from Eclipse, check the launch Debug Configuration settings. Halting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:23:31.236
+!MESSAGE Request for monitor: '42^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:23:31.236
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:23:33.213
+!MESSAGE Request for monitor: '51^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:23:33.213
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.launch 4 150 2022-11-28 07:23:44.437
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Cannot run program "C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:289)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:108)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at com.freescale.s32ds.cdt.debug.LaunchConfigurationDelegate2Wrapper.launch(LaunchConfigurationDelegate2Wrapper.java:32)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2022-11-28 07:23:44.438
+!MESSAGE Cannot run program "C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:289)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:108)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at com.freescale.s32ds.cdt.debug.LaunchConfigurationDelegate2Wrapper.launch(LaunchConfigurationDelegate2Wrapper.java:32)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2022-11-28 07:23:53.832
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-run
+Error message from debugger back end:
+Error creating process C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf, (error 193).
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:228)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at com.freescale.s32ds.cdt.debug.LaunchConfigurationDelegate2Wrapper.launch(LaunchConfigurationDelegate2Wrapper.java:32)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Error creating process C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf, (error 193).
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:23:53.833
+!MESSAGE Failed to execute MI command:
+-exec-run
+Error message from debugger back end:
+Error creating process C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf, (error 193).
+!STACK 0
+java.lang.Exception: Error creating process C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf, (error 193).
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:24:28.677
+!MESSAGE Request for monitor: '*running,thread-id="all"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000570",func="GPIO_PORT_INIT",file="../src/main.c",fullname="C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\src\main.c",line="13",thread-groups=[i1],times="1",original-location="C:\\Backup\\s32k144_KNU_Driving_ABS_Simulator\\src\\s32k144_KNU_Driving_ABS_Simulator\\src\\main.c:13"}
+=breakpoint-modified,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x00000570",func="GPIO_PORT_INIT",file="../src/main.c",fullname="C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\src\main.c",line="14",thread-groups=[i1],times="1",original-location="C:\\Backup\\s32k144_KNU_Driving_ABS_Simulator\\src\\s32k144_KNU_Driving_ABS_Simulator\\src\\main.c:14"}
+~"\n"
+~"Breakpoint 1, GPIO_PORT_INIT () at ../src/main.c:26\n"
+~"26\t    PCC_PORTA |= PCC_PCCn_CGC_MASK;\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x00000570",func="GPIO_PORT_INIT",args=[],file="../src/main.c",fullname="C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\src\main.c",line="26"},thread-id="1",stopped-threads="all"
+42^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:24:28.677
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:24:32.926
+!MESSAGE Request for monitor: '53^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:24:32.927
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:25:28.735
+!MESSAGE Request for monitor: '*running,thread-id="all"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000570",func="GPIO_PORT_INIT",file="../src/main.c",fullname="C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\src\main.c",line="14",thread-groups=[i1],times="1",original-location="C:\\Backup\\s32k144_KNU_Driving_ABS_Simulator\\src\\s32k144_KNU_Driving_ABS_Simulator\\src\\main.c:14"}
+=breakpoint-modified,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x00000570",func="GPIO_PORT_INIT",file="../src/main.c",fullname="C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\src\main.c",line="13",thread-groups=[i1],times="1",original-location="C:\\Backup\\s32k144_KNU_Driving_ABS_Simulator\\src\\s32k144_KNU_Driving_ABS_Simulator\\src\\main.c:13"}
+~"\n"
+~"Breakpoint 1, GPIO_PORT_INIT () at ../src/main.c:26\n"
+~"26\t    PCC_PORTA |= PCC_PCCn_CGC_MASK;\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x00000570",func="GPIO_PORT_INIT",args=[],file="../src/main.c",fullname="C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\src\main.c",line="26"},thread-id="1",stopped-threads="all"
+41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:25:28.735
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:25:32.342
+!MESSAGE Request for monitor: '50^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:25:32.342
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.launch 4 150 2022-11-28 07:28:59.777
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Cannot run program "C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:289)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:108)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at com.freescale.s32ds.cdt.debug.LaunchConfigurationDelegate2Wrapper.launch(LaunchConfigurationDelegate2Wrapper.java:32)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2022-11-28 07:28:59.777
+!MESSAGE Cannot run program "C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Backup\s32k144_KNU_Driving_ABS_Simulator\src\s32k144_KNU_Driving_ABS_Simulator\Debug_FLASH\s32k144_KNU_Driving_ABS_Simulator.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:289)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:108)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at com.freescale.s32ds.cdt.debug.LaunchConfigurationDelegate2Wrapper.launch(LaunchConfigurationDelegate2Wrapper.java:32)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:37:13.115
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:37:13.115
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:50:37.104
+!MESSAGE Request for monitor: '42^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:50:37.104
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:51:21.297
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:51:21.297
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:53:19.028
+!MESSAGE Request for monitor: '42^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:53:19.029
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:55:44.728
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:55:44.728
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:55:59.264
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@15781f5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2022-11-28 07:55:59.264
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 07:57:05.688
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 07:57:05.688
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:00:46.258
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:00:46.258
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:02:46.907
+!MESSAGE Request for monitor: '42^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:02:46.907
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:04:07.673
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:04:07.673
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:05:58.401
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:05:58.401
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:06:21.235
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:06:21.235
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:18:01.734
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:18:01.734
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:20:53.916
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:20:53.916
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:36:34.374
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:36:34.374
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:37:43.066
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:37:43.066
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:38:09.114
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:38:09.114
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:41:12.838
+!MESSAGE Request for monitor: '43^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:41:12.838
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:41:46.069
+!MESSAGE Request for monitor: '40^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:41:46.069
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:42:20.253
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:42:20.253
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:44:16.978
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:44:16.978
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:46:09.921
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:46:09.922
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:48:38.577
+!MESSAGE Request for monitor: '41^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:48:38.577
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:54:46.608
+!MESSAGE Request for monitor: '49^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:54:46.608
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 08:55:27.893
+!MESSAGE Request for monitor: '50^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 08:55:27.893
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 09:02:21.462
+!MESSAGE Request for monitor: '50^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 09:02:21.462
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 10:21:20.349
+!MESSAGE Request for monitor: '49^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-11-28 10:21:20.349
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)

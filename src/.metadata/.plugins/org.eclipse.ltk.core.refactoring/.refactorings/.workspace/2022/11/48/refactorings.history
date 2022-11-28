@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;s32k144_KNU_Driving_ABS_Simulator/Sources/main.c&apos;" deleteContents="false" description="Delete resource &apos;s32k144_KNU_Driving_ABS_Simulator/Sources/main.c&apos;" element1="/s32k144_KNU_Driving_ABS_Simulator/Sources/main.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1669169116034"/>
+</session>
