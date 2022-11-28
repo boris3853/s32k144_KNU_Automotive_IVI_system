@@ -8,6 +8,7 @@ unsigned int External_PIN=0; /* External_PIN:SW External input Assignment */
 
 // test
 unsigned int state_ = 0;
+int num;
 
 // 7SEG 관련 변수
 unsigned int num,num0,num1 = 0;

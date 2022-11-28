@@ -29,12 +29,11 @@ void GPIO_PORT_INIT()
     PTA->PDDR &= ~((1<<6)|(1<<7)|(1<<8)|(1<<9));
     PTA->PDDR |= (1<<11)|(1<<12)|(1<<13);
 
-    // PORTA: PA6 PA7 PA8 PA9 MUX IRQC Setting
-    // 			PA11 PA12 PA13 MUX Setting
-    PORTA->PCR[6] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
-    PORTA->PCR[7] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
-    PORTA->PCR[8] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
-    PORTA->PCR[9] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
+    // PORTA: PA6 PA7 PA8 PA9 PA11 PA12 PA13 MUX ¼³Á¤
+    PORTA->PCR[6] |= PORT_PCR_MUX(1);
+    PORTA->PCR[7] |= PORT_PCR_MUX(1);
+    PORTA->PCR[8] |= PORT_PCR_MUX(1);
+    PORTA->PCR[9] |= PORT_PCR_MUX(1);
     PORTA->PCR[11] |= PORT_PCR_MUX(1);
     PORTA->PCR[12] |= PORT_PCR_MUX(1);
     PORTA->PCR[13] |= PORT_PCR_MUX(1);
@@ -135,7 +134,7 @@ void Seg_out(int number){
 void NVIC_init_IRQs(void){
 	S32_NVIC->ICPR[1] |= 1<<(59%32); // Clear any pending IRQ59
 	S32_NVIC->ISER[1] |= 1<<(59%32); // Enable IRQ59
-	S32_NVIC->IP[59] = 0xB; //Priority 11 of 15
+	S32_NVIC->IP[59] =0xB; //Priority 11 of 15
 }
 
 void PORTA_IRQHandler(void){
@@ -161,22 +160,28 @@ void PORTA_IRQHandler(void){
 	// External input Check Behavior Assignment
 	switch (External_PIN){
 		case 1:
-			num = 11;
-			External_PIN=0;
+			PTA->PCOR |= (1<<11);
+					PTA->PSOR |= (1<<12);
+					PTA->PSOR |= (1<<13);
 			break;
 		case 2:
-			num = 22;
-			External_PIN=0;
+			PTA->PSOR |= (1<<11);
+					PTA->PCOR |= (1<<12);
+					PTA->PSOR |= (1<<13);
 			break;
 		case 3:
-			num = 33;
-			External_PIN=0;
+			PTA->PSOR |= (1<<11);
+					PTA->PSOR |= (1<<12);
+					PTA->PCOR |= (1<<13);
 			break;
 		case 4:
-			num = 44;
+			state_ = 4;
 			External_PIN=0;
 			break;
 		default:
+			PTA->PSOR |= (1<<11);
+			PTA->PSOR |= (1<<12);
+			PTA->PSOR |= (1<<13);
 			break;
 	}
 
@@ -186,9 +191,9 @@ void PORTA_IRQHandler(void){
 	PORTA->PCR[9] |= 0x01000000; // Port Control Register ISF bit '1' set
 }
 
-
 void TEST()
 {
+/*
 	if(!(PTA->PDIR & (1<<6)))
 	    PTA->PCOR |= (1<<11);
 	else
@@ -203,7 +208,7 @@ void TEST()
         PTA->PCOR |= (1<<13);
     else
         PTA->PSOR |= (1<<13);
-/*
+*/
 	if(state_ == 1)
 	{
 		PTA->PCOR |= (1<<11);
@@ -220,27 +225,25 @@ void TEST()
 		PTA->PSOR |= (1<<12);
 		PTA->PCOR |= (1<<13);
 	}
-*/
+
 }
 
 // test
 int main(void){
 	WDOG_disable();        /* Disable WatchDogs*/
-    GPIO_PORT_INIT();
-    SEG_PORT_INIT();
-
-	SOSC_init_8MHz();      /* Initialize system oscilator for 8 MHz xtal */
+    SOSC_init_8MHz();      /* Initialize system oscilator for 8 MHz xtal */
     SPLL_init_160MHz();    /* Initialize SPLL to 160 MHz with 8 MHz SOSC */
     NormalRUNmode_80MHz(); /* Init clocks: 80 MHz sysclk & core, 40 MHz bus, 20 MHz flash */
     SystemCoreClockUpdate();
-    NVIC_init_IRQs();
 
+    GPIO_PORT_INIT();
+    SEG_PORT_INIT();
 
-
-    num = 88;
+    int num = 88;
     while(1)
     {
         //TEST();
         Seg_out(num);
+        delay_ms(1000);
     }
 }

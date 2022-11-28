@@ -226,18 +226,16 @@ void TEST()
 // test
 int main(void){
 	WDOG_disable();        /* Disable WatchDogs*/
-    GPIO_PORT_INIT();
-    SEG_PORT_INIT();
-
-	SOSC_init_8MHz();      /* Initialize system oscilator for 8 MHz xtal */
+    SOSC_init_8MHz();      /* Initialize system oscilator for 8 MHz xtal */
     SPLL_init_160MHz();    /* Initialize SPLL to 160 MHz with 8 MHz SOSC */
     NormalRUNmode_80MHz(); /* Init clocks: 80 MHz sysclk & core, 40 MHz bus, 20 MHz flash */
     SystemCoreClockUpdate();
     NVIC_init_IRQs();
 
+    GPIO_PORT_INIT();
+    SEG_PORT_INIT();
 
-
-    num = 88;
+    int num = 88;
     while(1)
     {
         //TEST();

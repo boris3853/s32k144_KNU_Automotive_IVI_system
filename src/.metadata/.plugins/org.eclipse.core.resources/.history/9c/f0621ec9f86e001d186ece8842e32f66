@@ -237,7 +237,7 @@ int main(void){
 
 
 
-    num = 88;
+    int num = 88;
     while(1)
     {
         //TEST();
