@@ -1,1 +1,1 @@
-# s32k144_KNU_Automotive_IVI_system
+# s32k144_KNU_IVI_system
