@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item
+                android:drawable="@drawable/pedal_glow"
+                android:width="80dp"
+                android:height="120dp"/>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="false">
+        <layer-list>
+            <item
+                android:drawable="@drawable/pedal_"
+                android:width="80dp"
+                android:height="120dp"/>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,76 @@
+#include "S32K144.h"
+#include "device_registers.h"
+#define DNUM 3
+
+
+void DHT_PORT_init(void)
+{
+    PTD->PDDR |= 1 << 3;
+
+    //Pin mux
+    PORTD->PCR[9]= PORT_PCR_MUX(1);
+}
+
+
+void request()
+{
+	PTD->PDDR |= 1<<DNUM;		// output mode
+	PTD->PCOR |= 1<<DNUM;   	// low
+	delay_ms(50);				//more than 18ms
+//	delay_ms(20);				//more than 18ms
+	PTD->PSOR |= 1<<DNUM;		// high
+}
+
+int response()
+{
+	PTD->PDDR &= ~(1<<DNUM);		// input mode
+//	delay_us(39);					//pulled wait 20~40us
+	delay_us(59);					//pulled wait 20~40us
+	while(PTD->PDIR & (1<<DNUM));		//response signal check
+
+	delay_us(80);					//wait 80us
+	if(!(PTD->PDIR & (1<<DNUM)))	//pulled ready output check
+		return 1;
+
+	delay_us(80);					//wait 80us
+	return 0;
+}
+
+uint8_t receive_data()
+{
+	for (int i=0; i<8; i++)
+	{
+		while((PTD->PDIR & (1<<DNUM)) == 0); 	//50us signal wait
+//		delay_us(30);
+		delay_us(35);
+
+		if(PTD->PDIR & (1<<DNUM))				//greater than 30ms -> HIGH
+			DHT11_data = (DHT11_data<<1)|(0x01);
+		else						//less than 30ms -> LOW
+			DHT11_data = (DHT11_data<<1);
+
+		while(PTD->PDIR & (1<<DNUM));
+	}
+	return DHT11_data;
+}
+
+void get_dht11()
+{
+	request();						//Host send a start signal
+	if(response() != 1)				//DHT11 response
+	{
+		hum_int = receive_data();	//Humidity integer
+		hum_dec = receive_data();	//Humidity decimal
+		tem_int = receive_data();	//Temporature integer
+		tem_dec = receive_data();	//Temporature decimal
+		parity = receive_data();	//parity
+
+		// ERROR OCCUR: LED ON
+		if(((uint8_t)(hum_int + hum_dec + tem_int + tem_dec)) != parity)
+			PTA->PCOR |= (1<<14);
+		// NO ERROR: LED OFF
+		else
+			PTA->PSOR |= (1<<14);
+	}
+}
+

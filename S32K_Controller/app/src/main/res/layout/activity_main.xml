@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:drawableTop="@drawable/pedal1" />
+    <Button
+        android:id="@+id/buttonP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:drawableTop="@drawable/pedal2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonP1"/>
+
+    <View
+        android:id="@+id/emptyView"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/buttonP2" />
+    <TextView
+        android:id="@+id/textAngle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angle:  "
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/buttonP2">
+    </TextView>
+    <TextView
+        android:id="@+id/textAngle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/textAngle1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textSpeed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed: "
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/buttonP2"
+        android:layout_below="@+id/textAngle1">
+    </TextView>
+    <TextView
+        android:id="@+id/textSpeed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/textSpeed1"
+        android:layout_below="@+id/textAngle1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textMod1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mod: "
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/buttonP2"
+        android:layout_below="@+id/textSpeed1">
+    </TextView>
+    <TextView
+        android:id="@+id/textMod2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/textMod1"
+        android:layout_below="@+id/textSpeed1">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:background="#C0C0C0">
+
+        <RadioButton
+            android:layout_weight="1"
+            android:text="P"
+            android:textSize="40dp"
+            android:id="@+id/rg_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:text="R"
+            android:textSize="40dp"
+            android:id="@+id/rg_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:layout_weight="1"
+            android:text="N"
+            android:textSize="40dp"
+            android:id="@+id/rg_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_weight="1"
+            android:text="D"
+            android:textSize="40dp"
+            android:id="@+id/rg_btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/view_touch"
+        android:background="#eee"
+        android:layout_toRightOf="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/steering"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/emptyView"
+        android:src="@drawable/steering_wheel" />
+</RelativeLayout>
