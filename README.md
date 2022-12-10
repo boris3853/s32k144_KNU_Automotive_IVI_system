@@ -1,1 +1,1 @@
-# s32k144_KNU_Driving_ABS_Simulator
+# s32k144_KNU_Automotive_IVI_system
