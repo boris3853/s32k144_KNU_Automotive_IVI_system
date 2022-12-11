@@ -1,0 +1,28 @@
+16:19:06 **** Incremental Build of configuration Debug_FLASH for project s32k144_KNU_Driving_ABS_Simulator ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:103:6: warning: unused variable 'D' [-Wunused-variable]
+  int D=0;
+      ^
+../src/main.c:102:11: warning: unused variable 'adcResultInMv' [-Wunused-variable]
+  uint32_t adcResultInMv=0; /*< ADC0 Result in miliVolts */
+           ^~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: s32k144_KNU_Driving_ABS_Simulator.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "s32k144_KNU_Driving_ABS_Simulator.elf" "@s32k144_KNU_Driving_ABS_Simulator.args"   
+Finished building target: s32k144_KNU_Driving_ABS_Simulator.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley s32k144_KNU_Driving_ABS_Simulator.elf
+   text	   data	    bss	    dec	    hex	filename
+   2808	   1064	   3104	   6976	   1b40	s32k144_KNU_Driving_ABS_Simulator.elf
+Finished building: s32k144_KNU_Driving_ABS_Simulator.siz
+ 
+
+16:19:07 Build Finished (took 1s.361ms)
+
