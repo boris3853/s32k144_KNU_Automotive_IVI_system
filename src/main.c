@@ -17,16 +17,16 @@ int angle = 0;
 int mode = 4;
 int servoM[7] = {150, 1000, 2000, 3100, 4000, 5000, 6000};
 
-// 7SEG ∞¸∑√ ∫Øºˆ
+// 7SEG Í¥ÄÎ†® Î≥ÄÏàò
 unsigned int num,num0,num1 = 0;
 unsigned int FND_SEL[2]={ 0x002,0x001 };
 unsigned int FND_DATA[10] =
 { 0x53C, 0x018, 0x92C, 0x83C, 0xC18, 0xC34, 0xD34, 0x41C, 0xD3C, 0xC1C };
 unsigned int CLEAR_SEL = 0x003, CLEAR_DATA = 0xD3C;
 
-// LCD ∞¸∑√ ∫Øºˆ
-unsigned int IsMenuPrinted = 0;		// LCD √‚∑¬ ø©∫Œ (0: √‚∑¬ X 1: √‚∑¬O)
-unsigned int MenuST = 0;	// LCD πÃ¥∫ º±¡§
+// LCD Í¥ÄÎ†® Î≥ÄÏàò
+unsigned int IsMenuPrinted = 0;		// LCD Ï∂úÎ†• Ïó¨Î∂Ä (0: Ï∂úÎ†• X 1: Ï∂úÎ†•O)
+unsigned int MenuST = 0;		// LCD Î©îÎâ¥ ÏÑ†Ï†ï
 
 
 void LPIT0_init (uint32_t delay){
@@ -124,10 +124,10 @@ void FTM0_CH1_PWM (int i){//uint32_t i){
 
 void GPIO_PORT_INIT()
 {
-    // GPIO PCC º≥¡§ - CGC ∏∂Ω∫≈∑
+    // GPIO PCC ÏÑ§Ï†ï - CGC ÎßàÏä§ÌÇπ
     PCC->PCCn[PCC_PORTA_INDEX] |= PCC_PCCn_CGC_MASK;
 
-    /* GPIOA PDDR º≥¡§
+    /* GPIOA PDDR ÏÑ§Ï†ï
     // INPUT: PA6 PA7 PA8 PA9
     // OUTPUT: PA11 PA12 PA13 PA14
     */
@@ -234,16 +234,16 @@ int KeyScan(void){
 
 void SEG_PORT_INIT()
 {
-	// 7SEG PCC º≥¡§ - CGC ∏∂Ω∫≈∑
+	// 7SEG PCC ÏÑ§Ï†ï - CGC ÎßàÏä§ÌÇπ
     PCC->PCCn[PCC_PORTB_INDEX] |= PCC_PCCn_CGC_MASK;
 
-    /* 7SEG PDDR º≥¡§
+    /* 7SEG PDDR ÏÑ§Ï†ï
     // OUTPUT: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB10 PB10
     */
     PTB->PDDR |= (1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|
     			 (1<<5)|(1<<8)|(1<<10)|(1<<11);
 
-    // PORTB: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB10 PB11 MUX º≥¡§
+    // PORTB: PB0 PB1 PB2 PB3 PB4 PB5 PB8 PB10 PB11 MUX ÏÑ§Ï†ï
     PORTB->PCR[0] |= PORT_PCR_MUX(1);
     PORTB->PCR[1] |= PORT_PCR_MUX(1);
     PORTB->PCR[2] |= PORT_PCR_MUX(1);
@@ -261,7 +261,7 @@ void Seg_out(int number){
 	num1=(number/10)%10;
 	num0= number%10;
 
-	// 10¿⁄∏Æºˆ √‚∑¬
+	// 10ÏûêÎ¶¨Ïàò Ï∂úÎ†•
 	PTB->PSOR = FND_SEL[j];
 	PTB->PSOR = FND_DATA[num1];
 	delay_ms(Delaytime);
@@ -269,7 +269,7 @@ void Seg_out(int number){
 	PTB->PCOR = CLEAR_DATA;
 	j++;
 
-	// 1¿⁄∏Æºˆ √‚∑¬
+	// 1ÏûêÎ¶¨Ïàò Ï∂úÎ†•
 	PTB->PSOR = FND_SEL[j];
 	PTB->PSOR = FND_DATA[num0];
 	delay_ms(Delaytime);
@@ -310,7 +310,7 @@ void PORTA_IRQHandler(void){
 		case 1:
 			//num = 11;
 
-			// ¥Ÿ¿Ω Menu
+			// Îã§Ïùå Menu
 			MenuST = (MenuST + 1) % 4;
 			IsMenuPrinted = 0;
 
@@ -319,7 +319,7 @@ void PORTA_IRQHandler(void){
 		case 2:
 			//num = 22;
 
-			// ¿Ã¿¸ ∏ﬁ¥∫
+			// Ïù¥Ï†Ñ Î©îÎâ¥
 			MenuST = (MenuST + 3) % 4;
 			IsMenuPrinted = 0;
 
@@ -503,17 +503,17 @@ int main(void){
 
     	switch(Kbuff)
     	{
-    		case 1: //angle ¡ı∞°
+    		case 1: //angle Ï¶ùÍ∞Ä
     			if(angle < 70) angle++;
     			break;
-    		case 3: // angle ∞®º“
+    		case 3: // angle Í∞êÏÜå
     			if(angle > -70) angle--;
     			break;
-    		case 5:	// speed ¡ı∞°
+    		case 5:	// speed Ï¶ùÍ∞Ä
     			if(speed < 90) speed++;
     			if(D < 7200) D += 900;
     			break;
-    		case 2:	// speed ∞®º“
+    		case 2:	// speed Í∞êÏÜå
     			if(speed > 0) speed--;
     			if(D > 0) D -= 900;
     			break;
