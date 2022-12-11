@@ -1,44 +1,33 @@
 #include "device_registers.h"
 #include "clocks_and_modes.h"
+#include "lcd1602A.h"
+
+// deprecated
+#include "dht11.h"
+#include "test_module.h"
 
 int lpit0_ch0_flag_counter = 0; /*< LPIT0 timeout counter */
 unsigned int j = 0; 			/*FND select pin index */
 unsigned int Delaytime = 0; 	/* Delay Time Setting Variable*/
 unsigned int External_PIN=0; /* External_PIN:SW External input Assignment */
 
-// test
-unsigned int state_ = 0;
+// speed, angle
+int speed = 0;
+int angle = 0;
+int mode = 4;
+int servoM[7] = {150, 1000, 2000, 3100, 4000, 5000, 6000};
 
 // 7SEG 관련 변수
 unsigned int num,num0,num1 = 0;
-unsigned int FND_SEL[4]={ 0x001,0x002 };
+unsigned int FND_SEL[2]={ 0x002,0x001 };
 unsigned int FND_DATA[10] =
 { 0x53C, 0x018, 0x92C, 0x83C, 0xC18, 0xC34, 0xD34, 0x41C, 0xD3C, 0xC1C };
 unsigned int CLEAR_SEL = 0x003, CLEAR_DATA = 0xD3C;
 
+// LCD 관련 변수
+unsigned int IsMenuPrinted = 0;		// LCD 출력 여부 (0: 출력 X 1: 출력O)
+unsigned int MenuST = 0;		// LCD 메뉴 선정
 
-void GPIO_PORT_INIT()
-{
-    // GPIO PCC 설정 - CGC 마스킹
-    PCC->PCCn[PCC_PORTA_INDEX] |= PCC_PCCn_CGC_MASK;
-
-    /* GPIOA PDDR 설정
-    // INPUT: PA6 PA7 PA8 PA9
-    // OUTPUT: PA11 PA12 PA13
-    */
-    PTA->PDDR &= ~((1<<6)|(1<<7)|(1<<8)|(1<<9));
-    PTA->PDDR |= (1<<11)|(1<<12)|(1<<13);
-
-    // PORTA: PA6 PA7 PA8 PA9 MUX IRQC Setting
-    // 			PA11 PA12 PA13 MUX Setting
-    PORTA->PCR[6] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
-    PORTA->PCR[7] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
-    PORTA->PCR[8] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
-    PORTA->PCR[9] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
-    PORTA->PCR[11] |= PORT_PCR_MUX(1);
-    PORTA->PCR[12] |= PORT_PCR_MUX(1);
-    PORTA->PCR[13] |= PORT_PCR_MUX(1);
-}
 
 void LPIT0_init (uint32_t delay){
     uint32_t timeout;
@@ -58,7 +47,7 @@ void LPIT0_init (uint32_t delay){
    /* SW_RST=0: SW reset does not reset timer chans, regs */
    /* M_CEN=1: enable module clk (allows writing other LPIT0 regs) */
 
-   timeout=delay * 40000;
+   timeout=delay * 40;
    LPIT0->TMR[0].TVAL = timeout;      /* Chan 0 Timeout period: 40M clocks */
    LPIT0->TMR[0].TCTRL |= LPIT_TMR_TCTRL_T_EN_MASK;
    /* T_EN=1: Timer channel is enabled */
@@ -79,11 +68,169 @@ void WDOG_disable (void){
 
 
 void delay_ms (uint32_t ms){
-	LPIT0_init(ms);           /* Initialize PIT0 for delay time, timeout  */
+	LPIT0_init(ms * 1000);           /* Initialize PIT0 for delay time, timeout  */
     while (0 == (LPIT0->MSR & LPIT_MSR_TIF0_MASK)) {} /* Wait for LPIT0 CH0 Flag */
     lpit0_ch0_flag_counter++;         /* Increment LPIT0 timeout counter */
     LPIT0->MSR |= LPIT_MSR_TIF0_MASK; /* Clear LPIT0 timer flag 0 */
 }
+
+void delay_us (uint32_t us){
+	LPIT0_init(us);           /* Initialize PIT0 for delay time, timeout  */
+    while (0 == (LPIT0->MSR & LPIT_MSR_TIF0_MASK)) {} /* Wait for LPIT0 CH0 Flag */
+    lpit0_ch0_flag_counter++;         /* Increment LPIT0 timeout counter */
+    LPIT0->MSR |= LPIT_MSR_TIF0_MASK; /* Clear LPIT0 timer flag 0 */
+}
+
+void FTM_init (void){
+
+	//FTM0 clocking
+	PCC->PCCn[PCC_FTM0_INDEX] &= ~PCC_PCCn_CGC_MASK;		//Ensure clk diabled for config
+	PCC->PCCn[PCC_FTM0_INDEX] |= PCC_PCCn_PCS(0b010)		//Clocksrc=1, 8MHz SIRCDIV1_CLK
+								| PCC_PCCn_CGC_MASK;		//Enable clock for FTM regs
+
+//FTM0 Initialization
+	FTM0->SC = FTM_SC_PWMEN1_MASK							//Enable PWM channel 1output
+			| FTM_SC_PWMEN2_MASK | FTM_SC_PWMEN3_MASK
+				|FTM_SC_PS(1);								//TOIE(timer overflow Interrupt Ena) = 0 (deafault)
+															//CPWMS(Center aligned PWM Select) =0 (default, up count)
+															/* CLKS (Clock source) = 0 (default, no clock; FTM disabled) 	*/
+															/* PS (Prescaler factor) = 1. Prescaler = 2 					*/
+
+	FTM0->MOD = 8000-1;									//FTM0 counter final value (used for PWM mode)
+															// FTM0 Period = MOD-CNTIN+0x0001~=16000 ctr clks=8ms
+															//8Mhz /2 =4MHz
+	FTM0->CNTIN = FTM_CNTIN_INIT(0);
+
+
+	FTM0->CONTROLS[1].CnSC |=FTM_CnSC_MSB_MASK;
+	FTM0->CONTROLS[1].CnSC |=FTM_CnSC_ELSA_MASK;			/* FTM0 ch1: edge-aligned PWM, low true pulses 		*/
+															/* CHIE (Chan Interrupt Ena) = 0 (default) 			*/
+															/* MSB:MSA (chan Mode Select)=0b10, Edge Align PWM		*/													/* ELSB:ELSA (chan Edge/Level Select)=0b10, low true 	*/
+	FTM0->CONTROLS[2].CnSC |=FTM_CnSC_MSB_MASK;
+	FTM0->CONTROLS[2].CnSC |=FTM_CnSC_ELSA_MASK;
+	FTM0->CONTROLS[3].CnSC |=FTM_CnSC_MSB_MASK;
+	FTM0->CONTROLS[3].CnSC |=FTM_CnSC_ELSA_MASK;
+
+	FTM0->SC|=FTM_SC_CLKS(3);
+}
+
+void FTM0_CH1_PWM (int i){//uint32_t i){
+	FTM0->CONTROLS[1].CnV = i;//8000~0 duty; ex(7200=> Duty 0.1 / 800=>Duty 0.9)
+	//start FTM0 counter with clk source = external clock (SOSCDIV1_CLK)
+	FTM0->SC|=FTM_SC_CLKS(3);
+}
+
+
+
+void GPIO_PORT_INIT()
+{
+    // GPIO PCC 설정 - CGC 마스킹
+    PCC->PCCn[PCC_PORTA_INDEX] |= PCC_PCCn_CGC_MASK;
+
+    /* GPIOA PDDR 설정
+    // INPUT: PA6 PA7 PA8 PA9
+    // OUTPUT: PA11 PA12 PA13 PA14
+    */
+    PTA->PDDR &= ~((1<<6)|(1<<7)|(1<<8)|(1<<9));
+    PTA->PDDR |= (1<<11)|(1<<12)|(1<<13)|(1<<14);
+
+    // PORTA: PA6 PA7 PA8 PA9 MUX IRQC Setting
+    // 			PA11 PA12 PA13 MUX Setting
+    PORTA->PCR[6] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
+    PORTA->PCR[7] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
+    PORTA->PCR[8] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
+    PORTA->PCR[9] |= PORT_PCR_MUX(1) | PORT_PCR_IRQC(10);
+    PORTA->PCR[11] |= PORT_PCR_MUX(1);
+    PORTA->PCR[12] |= PORT_PCR_MUX(1);
+    PORTA->PCR[13] |= PORT_PCR_MUX(1);
+    PORTA->PCR[14] |= PORT_PCR_MUX(1);
+}
+
+void LCD_PORT_init (void)
+{
+	 /*
+   * ===============PORT-D SEGMENT=====================
+   */
+
+	//=========================================
+	//port D 15, 14, 13 - RS, RW, ENABLE
+	//port D 12, 11, 10, 9 - Transmission port(DB7, 6, 5, 4)
+	//=========================================
+
+	//PTD->PDDR |= 0xFE00;
+    PTD->PDDR |= 1<<9 | 1<<10 | 1<<11 | 1<<12 | 1<<13 | 1<<14 | 1<<15;
+
+	PCC->PCCn[PCC_PORTD_INDEX] &= ~PCC_PCCn_CGC_MASK;
+	PCC->PCCn[PCC_PORTD_INDEX] |= PCC_PCCn_PCS(0x001);
+	PCC->PCCn[PCC_PORTD_INDEX] |= PCC_PCCn_CGC_MASK;
+	PCC->PCCn[PCC_FTM2_INDEX]  &= ~PCC_PCCn_CGC_MASK;
+	PCC->PCCn[PCC_FTM2_INDEX]  |= (PCC_PCCn_PCS(1)| PCC_PCCn_CGC_MASK);		//Clock = 80MHz
+
+
+
+    //Pin mux
+    PORTD->PCR[9]= PORT_PCR_MUX(1);
+    PORTD->PCR[10]= PORT_PCR_MUX(1);
+    PORTD->PCR[11]= PORT_PCR_MUX(1);
+    PORTD->PCR[12]= PORT_PCR_MUX(1);
+    PORTD->PCR[13]= PORT_PCR_MUX(1);
+    PORTD->PCR[14]= PORT_PCR_MUX(1);
+    PORTD->PCR[15]= PORT_PCR_MUX(1);
+
+    //Output set(set 4bit, 2line - 0b 0010 0101 000x xxxx)
+
+}
+
+
+
+void KEYPAD_init (void)
+{
+	PCC-> PCCn[PCC_PORTE_INDEX] = PCC_PCCn_CGC_MASK;
+	PTE->PDDR |= (1<<1)|(1<<2)|(1<<3);
+	PTE->PDDR &= ~((1<<6)|(1<<7)|(1<<8)|(1<<9));
+
+	PORTE->PCR[6] = PORT_PCR_MUX(1)|PORT_PCR_PFE_MASK|PORT_PCR_PE(1) | PORT_PCR_PS(0);
+	PORTE->PCR[7] = PORT_PCR_MUX(1)|PORT_PCR_PFE_MASK|PORT_PCR_PE(1) | PORT_PCR_PS(0);
+	PORTE->PCR[8] = PORT_PCR_MUX(1)|PORT_PCR_PFE_MASK|PORT_PCR_PE(1) | PORT_PCR_PS(0);
+	PORTE->PCR[9] = PORT_PCR_MUX(1)|PORT_PCR_PFE_MASK|PORT_PCR_PE(1) | PORT_PCR_PS(0);
+
+	PORTE->PCR[1]  = PORT_PCR_MUX(1);
+	PORTE->PCR[2]  = PORT_PCR_MUX(1);
+	PORTE->PCR[3]  = PORT_PCR_MUX(1);
+}
+
+int Kbuff;
+int KeyScan(void){
+   int Dtime = 1000;
+   Kbuff = -1;
+
+   PTE->PSOR |= (1<<1);
+   delay_us(Dtime);
+   if(PTE->PDIR &(1<<6))Kbuff=1;      //1
+   if(PTE->PDIR &(1<<7))Kbuff=4;      //4
+   if(PTE->PDIR &(1<<8))Kbuff=7;      //7
+   if(PTE->PDIR &(1<<9))Kbuff=11;     //*
+   PTE->PCOR |= (1<<1);
+
+   PTE->PSOR |= (1<<2);
+   delay_us(Dtime);
+   if(PTE->PDIR & (1<<6))Kbuff=2;      //2
+   if(PTE->PDIR & (1<<7))Kbuff=5;      //5
+   if(PTE->PDIR & (1<<8))Kbuff=8;      //8
+   if(PTE->PDIR & (1<<9))Kbuff=0;      //0
+   PTE->PCOR |= (1<<2);
+
+   PTE->PSOR |= (1<<3);
+   delay_us(Dtime);
+   if(PTE->PDIR & (1<<6))Kbuff=3;      //3
+   if(PTE->PDIR & (1<<7))Kbuff=6;      //6
+   if(PTE->PDIR & (1<<8))Kbuff=9;      //9
+   if(PTE->PDIR & (1<<9))Kbuff=12;    //#
+   PTE->PCOR |= (1<<3);
+
+   return Kbuff;
+}
+
 
 void SEG_PORT_INIT()
 {
@@ -116,17 +263,17 @@ void Seg_out(int number){
 
 	// 10자리수 출력
 	PTB->PSOR = FND_SEL[j];
-	PTB->PCOR = CLEAR_SEL;
 	PTB->PSOR = FND_DATA[num1];
 	delay_ms(Delaytime);
+	PTB->PCOR = CLEAR_SEL;
 	PTB->PCOR = CLEAR_DATA;
 	j++;
 
 	// 1자리수 출력
 	PTB->PSOR = FND_SEL[j];
-	PTB->PCOR = CLEAR_SEL;
 	PTB->PSOR = FND_DATA[num0];
 	delay_ms(Delaytime);
+	PTB->PCOR = CLEAR_SEL;
 	PTB->PCOR = CLEAR_DATA;
 	j=0;
 }
@@ -161,19 +308,29 @@ void PORTA_IRQHandler(void){
 	// External input Check Behavior Assignment
 	switch (External_PIN){
 		case 1:
-			num = 11;
+			//num = 11;
+
+			// 다음 Menu
+			MenuST = (MenuST + 1) % 4;
+			IsMenuPrinted = 0;
+
 			External_PIN=0;
 			break;
 		case 2:
-			num = 22;
+			//num = 22;
+
+			// 이전 메뉴
+			MenuST = (MenuST + 3) % 4;
+			IsMenuPrinted = 0;
+
 			External_PIN=0;
 			break;
 		case 3:
-			num = 33;
+			//num = 33;
 			External_PIN=0;
 			break;
 		case 4:
-			num = 44;
+//			num = 44;
 			External_PIN=0;
 			break;
 		default:
@@ -186,61 +343,191 @@ void PORTA_IRQHandler(void){
 	PORTA->PCR[9] |= 0x01000000; // Port Control Register ISF bit '1' set
 }
 
+void LCD_PRINT(char *line1, char *line2) {
+   lcdinput(0x01);
+   delay_ms(200);
 
-void TEST()
-{
-	if(!(PTA->PDIR & (1<<6)))
-	    PTA->PCOR |= (1<<11);
-	else
-	    PTA->PSOR |= (1<<11);
+   lcdinput(0x80);
+   delay_ms(200);
+   int i = 0;
+   //text-char output
+   while (line1[i] != '\0') {
+      lcdcharinput(line1[i]); // 1(first) row text-char send to LCD module
+      delay_ms(5);
+      i++;
 
-	if(!(PTA->PDIR & (1<<7)))
-		PTA->PCOR |= (1<<12);
-	else
-	    PTA->PSOR |= (1<<12);
+   }
 
-    if(!(PTA->PDIR & (1<<8)))
-        PTA->PCOR |= (1<<13);
-    else
-        PTA->PSOR |= (1<<13);
-/*
-	if(state_ == 1)
-	{
-		PTA->PCOR |= (1<<11);
-		PTA->PSOR |= (1<<12);
-		PTA->PSOR |= (1<<13);
-	}else if(state_ == 2)
-	{
-		PTA->PSOR |= (1<<11);
-		PTA->PCOR |= (1<<12);
-		PTA->PSOR |= (1<<13);
-	}else if(state_ == 3)
-	{
-		PTA->PSOR |= (1<<11);
-		PTA->PSOR |= (1<<12);
-		PTA->PCOR |= (1<<13);
-	}
-*/
+   lcdinput(0x80 + 0x40); // second row
+   delay_ms(200);
+   i = 0;
+   while (line2[i] != '\0') {
+      lcdcharinput(line2[i]); // 2(second) row text-char send to LCD module
+      delay_ms(5);
+      i++;
+   }
+
+   delay_ms(800);
 }
+
+char t1 = 1 + '0';
+char t2 = 2 + '0';
+
+// HUMID:
+char msg_H[15]={0x48, 0x55, 0x4D, 0x49,
+			0x44, 0x3A, 0x20, '0', '0', 0x25};// 1 row text-char
+
+// TEMP:
+char msg_T[15]={0x54, 0x45, 0x4D, 0x50,
+			0x3A, 0x20, '0', '0', 0x27};// 1 row text-char
+
+// VELOCITY:
+char msg_V[15]={0x56, 0x45, 0x4C, 0x4F,
+    			0x43, 0x49, 0x54, 0x59,
+				0x3A, 0x20, '0', '0',
+				0x6D, 0x2F, 0x73};// 1 row text-char
+
+// ANGLE: MODE
+char msg_A[15]={0x41, 0x4E, 0x47, 0x4C,
+    			0x45, 0x3A, 0x20, 0x4D,
+				0x4F, 0x44, 0x45, 0x20,
+				0x20};// 1 row text-char
+
+// WELCOME TO
+char msg_MN1[15]={0x57, 0x45, 0x4C, 0x43,
+    		      0x4F, 0x4D, 0x45, 0x20,
+				  0x54, 0x4F};
+
+// DRIVE DASHBOARD
+char msg_MN2[15]={0x44, 0x52, 0x49, 0x56,
+		 	 	  0x45, 0x20, 0x44, 0x41,
+				  0x53, 0x48, 0x42, 0x4F,
+     			  0x41, 0x52, 0x44};
+
+// CONTRIBUTION
+char msg_IN1[15]={0x43, 0x4F, 0x4E, 0x54,
+				  0x52, 0x49, 0x42, 0x55,
+				  0x54, 0x49, 0x4F, 0x4E};
+
+// KYUNG&LEE
+char msg_IN2[15]={0x4B, 0x59, 0x55, 0x4E,
+				  0x47, 0x26, 0x4C, 0x45,
+				  0x45};
+
+uint8_t num_t1, num_t2, num_t3, num_t4;
+
+void MenuSEL(int menu)
+{
+	switch(menu)
+	{
+		case 0:
+			LCD_PRINT(msg_MN1, msg_MN2);
+			break;
+		case 1:
+//			num_t1 = hum_int;
+//			num_t2 = hum_dec;
+//			num_t3 = tem_int;
+//			num_t4 = tem_dec;
+
+			num_t1 = 1;
+			num_t2 = 2;
+			num_t3 = 3;
+			num_t4 = 4;
+
+
+			msg_H[7] = num_t1 + '0';
+			msg_H[8] = num_t2 + '0';
+			msg_T[6] = num_t3 + '0';
+			msg_T[7] = num_t4 + '0';
+			LCD_PRINT(msg_H, msg_T);
+			break;
+		case 2:
+			num_t1 = (speed / 10) % 10;
+			num_t2 = speed % 10;
+
+			msg_V[10] = num_t1 + '0';
+			msg_V[11] = num_t2 + '0';
+			msg_A[12] = mode + '0';
+			LCD_PRINT(msg_V, msg_A);
+			break;
+		case 3:
+			LCD_PRINT(msg_IN1, msg_IN2);
+			break;
+		default:
+			break;
+	}
+
+	IsMenuPrinted = 1;
+}
+
+
+
+int D = 7200;
 
 // test
 int main(void){
 	WDOG_disable();        /* Disable WatchDogs*/
+	SOSC_init_8MHz();      /* Initialize system oscilator for 8 MHz xtal */
+	SPLL_init_160MHz();    /* Initialize SPLL to 160 MHz with 8 MHz SOSC */
+	NormalRUNmode_80MHz(); /* Init clocks: 80 MHz sysclk & core, 40 MHz bus, 20 MHz flash */
+	FTM_init();
+	SystemCoreClockUpdate();
+	NVIC_init_IRQs();
+
+
     GPIO_PORT_INIT();
     SEG_PORT_INIT();
-
-	SOSC_init_8MHz();      /* Initialize system oscilator for 8 MHz xtal */
-    SPLL_init_160MHz();    /* Initialize SPLL to 160 MHz with 8 MHz SOSC */
-    NormalRUNmode_80MHz(); /* Init clocks: 80 MHz sysclk & core, 40 MHz bus, 20 MHz flash */
-    SystemCoreClockUpdate();
-    NVIC_init_IRQs();
-
+    LCD_PORT_init();
+//    DHT_PORT_init();
+    KEYPAD_init();
+//    SERVO_init();
+    delay_ms(20);
 
 
-    num = 88;
+    lcdinit();        // Initialize LCD1602A module
+    delay_ms(200);
+
+    // LED OFF
+    for(int i=11;i<15;++i)
+    	PTA->PSOR |= (1<<i);
+
     while(1)
     {
-        //TEST();
-        Seg_out(num);
+    	if(!IsMenuPrinted) MenuSEL(MenuST);
+
+//      TEST2();
+//    	get_dht11();
+
+
+    	Kbuff = KeyScan();
+
+    	switch(Kbuff)
+    	{
+    		case 1: //angle 증가
+    			if(angle < 70) angle++;
+    			break;
+    		case 3: // angle 감소
+    			if(angle > -70) angle--;
+    			break;
+    		case 5:	// speed 증가
+    			if(speed < 90) speed++;
+    			if(D < 7200) D += 900;
+    			break;
+    		case 2:	// speed 감소
+    			if(speed > 0) speed--;
+    			if(D > 0) D -= 900;
+    			break;
+     	}
+
+
+
+    	// Print Speed Var on LCD Module
+    	Seg_out(speed);
+
+//    	FTM0->COMBINE |= FTM_COMBINE_SYNCEN1_MASK | FTM_COMBINE_COMP1_MASK | FTM_COMBINE_DTEN1_MASK;
+//
+//    	FTM0->CONTROLS[2].CnV=FTM_CnV_VAL(0); //8000~0 duty; ex(7200=> Duty 0.1 / 800=>Duty 0.9)
+//    	FTM0->CONTROLS[3].CnV=FTM_CnV_VAL(0); //8000~0 duty; ex(7200=> Duty 0.1 / 800=>Duty 0.9)
+//   	FTM0_CH1_PWM(1000);
     }
 }
