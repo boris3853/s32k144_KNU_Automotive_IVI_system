@@ -518,7 +518,21 @@ int main(void){
     			if(D > 0) D -= 900;
     			break;
      	}
-
+	    
+	if(angle > 50 && angle <= 70)
+    		mode = 7;
+    	else if(angle > 30 && angle <= 50)
+    		mode = 6;
+    	else if(angle > 10 && angle <= 30)
+    		mode = 5;
+    	else if(angle > -10 && angle <= 10)
+    		mode = 4;
+    	else if(angle > -30 && angle <= -10)
+    		mode = 3;
+    	else if(angle > -50 && angle <= -30)
+    		mode = 2;
+    	else if(angle >= -70 && angle <= -50)
+    		mode = 1;
 
 
     	// Print Speed Var on LCD Module
