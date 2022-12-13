@@ -2,6 +2,8 @@
 #include "device_registers.h"
 #define DNUM 3
 
+extern char DHT11_data, hum_dec, hum_int, parity, tem_dec, tem_int;
+
 
 void DHT_PORT_init(void)
 {
